@@ -11,6 +11,9 @@ namespace XMLWeather
 {
     public partial class CurrentScreen : UserControl
     {
+        public static string city = "Stratford";
+        public static string country = "CA";
+
         public CurrentScreen()
         {
             InitializeComponent();
@@ -24,9 +27,8 @@ namespace XMLWeather
             double max = Math.Round(Convert.ToDouble(Form1.days[0].tempHigh), 0);
             double feels = Math.Round(Convert.ToDouble(Form1.days[0].feelsLike));
             double preProb = Convert.ToDouble(Form1.days[0].preProb) * 100;
-            double speed = Convert.ToDouble(Form1.days[0].windSpeed);
+            double humidity = Convert.ToDouble(Form1.days[0].humidity);
 
-            int humidity = Convert.ToInt32(Form1.days[0].humidity);
             int weather = Convert.ToInt32(Form1.days[0].condum);
 
             string condition = Form1.days[0].condition;
@@ -54,7 +56,7 @@ namespace XMLWeather
             }
             #endregion
 
-            cityOutput.Text = Form1.days[0].location;
+            todayLabel.Text = $"{city}, {country}";
             currentOutput.Text = $"{current}°";
             minOutput.Text = $"{min}°";
             maxOutput.Text = $"{max}°";
@@ -77,7 +79,8 @@ namespace XMLWeather
         {
             if (colour == "white")
             {
-                cityOutput.ForeColor = Color.White;
+                cityLabel.ForeColor = Color.White;
+                countryLabel.ForeColor = Color.White;
                 currentOutput.ForeColor = Color.White;
                 minOutput.ForeColor = Color.Aqua;
                 maxOutput.ForeColor = Color.MistyRose;
@@ -92,7 +95,8 @@ namespace XMLWeather
             }
             else
             {
-                cityOutput.ForeColor = Color.Black;
+                cityLabel.ForeColor = Color.Black;
+                countryLabel.ForeColor = Color.Black;
                 currentOutput.ForeColor = Color.Black;
                 minOutput.ForeColor = Color.MidnightBlue;
                 maxOutput.ForeColor = Color.Firebrick;
@@ -104,6 +108,24 @@ namespace XMLWeather
                 conditionOutput.ForeColor = Color.Black;
                 humidityLabel.ForeColor = Color.Black;
                 humidityOutput.ForeColor = Color.Black;
+            }
+        }
+
+        private void cityButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                city = cityInput.Text;
+                country = countryInput.Text;
+
+                Form1.ExtractForecast(city, country);
+                Form1.ExtractCurrent(city, country);
+                DisplayCurrent();
+            }
+            catch
+            {
+                cityInput.Text = "ERROR: city not found";
+                cityInput.Text = "ERROR: city not found";
             }
         }
     }
