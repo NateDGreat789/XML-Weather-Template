@@ -28,9 +28,12 @@ namespace XMLWeather
             double feels = Math.Round(Convert.ToDouble(Form1.days[0].feelsLike));
             double preProb = Convert.ToDouble(Form1.days[0].preProb) * 100;
             double humidity = Convert.ToDouble(Form1.days[0].humidity);
+            double speed = Convert.ToDouble(Form1.days[0].windSpeed);
+
 
             int weather = Convert.ToInt32(Form1.days[0].condum);
 
+            string direction = Form1.days[0].windDirection;
             string condition = Form1.days[0].condition;
 
             #region background
@@ -64,6 +67,7 @@ namespace XMLWeather
             precipitationOutput.Text = $"{preProb}%";
             conditionOutput.Text = $"{condition}";
             humidityOutput.Text = $"{humidity}%";
+            windOutput.Text = $"{direction}\n{speed} m/s";
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)
@@ -92,6 +96,8 @@ namespace XMLWeather
                 conditionOutput.ForeColor = Color.White;
                 humidityLabel.ForeColor = Color.White;
                 humidityOutput.ForeColor = Color.White;
+                windLabel.ForeColor = Color.White;
+                windOutput.ForeColor = Color.White;
             }
             else
             {
@@ -108,6 +114,8 @@ namespace XMLWeather
                 conditionOutput.ForeColor = Color.Black;
                 humidityLabel.ForeColor = Color.Black;
                 humidityOutput.ForeColor = Color.Black;
+                windLabel.ForeColor = Color.Black;
+                windOutput.ForeColor = Color.Black;
             }
         }
 

@@ -46,6 +46,8 @@
             this.countryLabel = new System.Windows.Forms.Label();
             this.countryInput = new System.Windows.Forms.TextBox();
             this.cityButton = new System.Windows.Forms.Button();
+            this.windOutput = new System.Windows.Forms.Label();
+            this.windLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // maxOutput
@@ -258,12 +260,38 @@
             this.cityButton.UseVisualStyleBackColor = false;
             this.cityButton.Click += new System.EventHandler(this.cityButton_Click);
             // 
+            // windOutput
+            // 
+            this.windOutput.BackColor = System.Drawing.Color.Transparent;
+            this.windOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windOutput.ForeColor = System.Drawing.Color.Black;
+            this.windOutput.Location = new System.Drawing.Point(169, 412);
+            this.windOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windOutput.Name = "windOutput";
+            this.windOutput.Size = new System.Drawing.Size(160, 56);
+            this.windOutput.TabIndex = 56;
+            this.windOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // windLabel
+            // 
+            this.windLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windLabel.ForeColor = System.Drawing.Color.Black;
+            this.windLabel.Location = new System.Drawing.Point(4, 425);
+            this.windLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windLabel.Name = "windLabel";
+            this.windLabel.Size = new System.Drawing.Size(164, 35);
+            this.windLabel.TabIndex = 55;
+            this.windLabel.Text = "Wind Direction:\r\nWind Speed:";
+            this.windLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.windOutput);
+            this.Controls.Add(this.windLabel);
             this.Controls.Add(this.cityButton);
             this.Controls.Add(this.countryInput);
             this.Controls.Add(this.countryLabel);
@@ -309,5 +337,7 @@
         private System.Windows.Forms.Label countryLabel;
         private System.Windows.Forms.TextBox countryInput;
         private System.Windows.Forms.Button cityButton;
+        private System.Windows.Forms.Label windOutput;
+        private System.Windows.Forms.Label windLabel;
     }
 }
