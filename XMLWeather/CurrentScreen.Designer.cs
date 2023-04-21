@@ -58,7 +58,7 @@
             this.maxOutput.Location = new System.Drawing.Point(213, 169);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(69, 35);
+            this.maxOutput.Size = new System.Drawing.Size(103, 35);
             this.maxOutput.TabIndex = 32;
             this.maxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -70,7 +70,7 @@
             this.minOutput.Location = new System.Drawing.Point(211, 213);
             this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(71, 39);
+            this.minOutput.Size = new System.Drawing.Size(105, 39);
             this.minOutput.TabIndex = 30;
             this.minOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -79,10 +79,10 @@
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
             this.currentOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(20, 137);
+            this.currentOutput.Location = new System.Drawing.Point(0, 137);
             this.currentOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentOutput.Name = "currentOutput";
-            this.currentOutput.Size = new System.Drawing.Size(203, 149);
+            this.currentOutput.Size = new System.Drawing.Size(252, 149);
             this.currentOutput.TabIndex = 28;
             this.currentOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -170,7 +170,7 @@
             this.feelsLikeOutput.Location = new System.Drawing.Point(135, 271);
             this.feelsLikeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.feelsLikeOutput.Name = "feelsLikeOutput";
-            this.feelsLikeOutput.Size = new System.Drawing.Size(39, 25);
+            this.feelsLikeOutput.Size = new System.Drawing.Size(82, 25);
             this.feelsLikeOutput.TabIndex = 46;
             this.feelsLikeOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

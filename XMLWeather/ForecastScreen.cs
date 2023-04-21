@@ -36,19 +36,19 @@ namespace XMLWeather
             dateLabel5.Text = Form1.days[4].date;
             dateLabel6.Text = Form1.days[5].date;
 
-            minLabel1.Text = $"{Math.Round(Convert.ToDouble(Form1.days[0].tempLow), 0)}°";
-            minLabel2.Text = $"{Math.Round(Convert.ToDouble(Form1.days[1].tempLow), 0)}°";
-            minLabel3.Text = $"{Math.Round(Convert.ToDouble(Form1.days[2].tempLow), 0)}°";
-            minLabel4.Text = $"{Math.Round(Convert.ToDouble(Form1.days[3].tempLow), 0)}°";
-            minLabel5.Text = $"{Math.Round(Convert.ToDouble(Form1.days[4].tempLow), 0)}°";
-            minLabel6.Text = $"{Math.Round(Convert.ToDouble(Form1.days[5].tempLow), 0)}°";
+            minLabel1.Text = $"{Math.Round(Convert.ToDouble(Form1.days[0].tempLow), 0)}°C";
+            minLabel2.Text = $"{Math.Round(Convert.ToDouble(Form1.days[1].tempLow), 0)}°C";
+            minLabel3.Text = $"{Math.Round(Convert.ToDouble(Form1.days[2].tempLow), 0)}°C";
+            minLabel4.Text = $"{Math.Round(Convert.ToDouble(Form1.days[3].tempLow), 0)}°C";
+            minLabel5.Text = $"{Math.Round(Convert.ToDouble(Form1.days[4].tempLow), 0)}°C";
+            minLabel6.Text = $"{Math.Round(Convert.ToDouble(Form1.days[5].tempLow), 0)}°C";
 
-            maxLabel1.Text = $"{Math.Round(Convert.ToDouble(Form1.days[0].tempHigh), 0)}°";
-            maxLabel2.Text = $"{Math.Round(Convert.ToDouble(Form1.days[1].tempHigh), 0)}°";
-            maxLabel3.Text = $"{Math.Round(Convert.ToDouble(Form1.days[2].tempHigh), 0)}°";
-            maxLabel4.Text = $"{Math.Round(Convert.ToDouble(Form1.days[3].tempHigh), 0)}°";
-            maxLabel5.Text = $"{Math.Round(Convert.ToDouble(Form1.days[4].tempHigh), 0)}°";
-            maxLabel6.Text = $"{Math.Round(Convert.ToDouble(Form1.days[5].tempHigh), 0)}°";
+            maxLabel1.Text = $"{Math.Round(Convert.ToDouble(Form1.days[0].tempHigh), 0)}°C";
+            maxLabel2.Text = $"{Math.Round(Convert.ToDouble(Form1.days[1].tempHigh), 0)}°C";
+            maxLabel3.Text = $"{Math.Round(Convert.ToDouble(Form1.days[2].tempHigh), 0)}°C";
+            maxLabel4.Text = $"{Math.Round(Convert.ToDouble(Form1.days[3].tempHigh), 0)}°C";
+            maxLabel5.Text = $"{Math.Round(Convert.ToDouble(Form1.days[4].tempHigh), 0)}°C";
+            maxLabel6.Text = $"{Math.Round(Convert.ToDouble(Form1.days[5].tempHigh), 0)}°C";
 
             #region icons
             if (weathers[0] > 199 && weathers[0] < 600)

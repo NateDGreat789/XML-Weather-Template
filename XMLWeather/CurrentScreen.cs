@@ -60,10 +60,10 @@ namespace XMLWeather
             #endregion
 
             todayLabel.Text = $"{city}, {country}";
-            currentOutput.Text = $"{current}°";
-            minOutput.Text = $"{min}°";
-            maxOutput.Text = $"{max}°";
-            feelsLikeOutput.Text = $"{feels}°";
+            currentOutput.Text = $"{current}°C";
+            minOutput.Text = $"{min}°C";
+            maxOutput.Text = $"{max}°C";
+            feelsLikeOutput.Text = $"{feels}°C";
             precipitationOutput.Text = $"{preProb}%";
             conditionOutput.Text = $"{condition}";
             humidityOutput.Text = $"{humidity}%";
